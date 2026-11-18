@@ -1,0 +1,13 @@
+{
+  "name": "net-pilgrim.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daniel Voina's Personal Website",
+  "scripts": {
+    "copy-assets": "cp -r node_modules/@dvoina/skeleton-ng/src/* css/skeleton-ng/",
+    "postinstall": "npm run copy-assets"
+  },
+  "dependencies": {
+    "@dvoina/skeleton-ng": "npm:@net-pilgrim/skeleton-ng@0.1.1"
+  }
+}

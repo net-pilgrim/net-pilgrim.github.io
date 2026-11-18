@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>Daniel Voina @ ...</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Daniel Voina's Personal Website - Software Engineer">
+    <meta name="author" content="Daniel Voina">
 
     <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -16,23 +15,23 @@
 
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href="css/font-mfizz.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-mfizz.css">
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/skeleton-ng/styles.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
 
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,142 +44,131 @@
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div class="section main">
-        <div class="container">
-            <div class="row">
-                <h1>Daniel Voina</h1>
-                <h3>Software Engineer</h3>
-            </div>
+    <header class="section main">
+        <div class="wrap">
+            <p class="eyebrow kicker">Portfolio &amp; Profile</p>
+            <h1 class="hero-title">Daniel Voina</h1>
+            <p class="hero-subtitle">Software Engineer</p>
         </div>
-    </div>
+    </header>
 
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <h3>About me:</h3>
-            </div>
-            <div class="row" id="menu">
-                <p>I have grown a beard since 2004 and worked with Unices since 1996. Both were not cool at that time</p>
-                <p>I have been around computers since 1987 when I first seen a Sinclair Spectrum clone. 
+    <section class="section" id="about">
+        <div class="wrap">
+            <h2>About me</h2>
+            <div class="content">
+                <p>I have grown a beard since 2004 and worked with Unices since 1996. Both were not cool at that time.</p>
+                <p>I have been around computers since 1987 when I first saw a Sinclair Spectrum clone. 
                     Since then I worked with countless CPU architectures (from petty microcontrollers
                     to multicore SPARC) and programming languages.</p>
                 <p>I am a hacker at heart and I do not mind improvising some hardware when it is necessary
                     or going into Assembly Language if it is a must.</p> 
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <h3>What I do:</h3>
+    <section class="section" id="what-i-do">
+        <div class="wrap">
+            <h2>What I do</h2>
+            <div class="row button-group" id="menu">
+                <button class="button button-primary" id="software" type="button">Software</button>
+                <button class="button" id="telecom" type="button">Telecommunication</button>
+                <button class="button" id="ga" type="button">Graphic arts</button>
+                <button class="button" id="teaching" type="button">Teaching</button>
             </div>
-            <div class="row" id="menu">
-                <button id="software">Software</button>
-                <button id="telecom">Telecommunication</button>
-                <button id="ga">Graphic arts</button>
-                <button id="teaching">Teaching</button>
-            </div>
-            <div class="row" id="target1">
+            <div class="target-container" id="target1">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <h3>Vanity:</h3>
+    <section class="section" id="vanity-section">
+        <div class="wrap">
+            <h2>Vanity</h2>
+            <div class="row button-group" id="vanity">
+                <button class="button" data-href="https://www.canon-europe.com/software/oce-arizona-xpert/" type="button">Arizona XPert (2019)</button>
+                <button class="button" data-href="https://www.canon-europe.com/business-printers-and-faxes/oce-touchstone/" type="button">Oce Touchstone (2018)</button>
+                <button class="button" data-href="https://play.google.com/store/apps/details?id=com.ocesoftware.publishermobile" type="button">Oce Publisher Mobile (2013)</button>
+                <button class="button" data-href="https://networks.nokia.com/es/node/1156" type="button">Alcatel/Nokia 5900 SRP (2010)</button>
             </div>
-            <div class="row" id="vanity">
-                <button data-href="https://www.canon-europe.com/software/oce-arizona-xpert/">Arizona XPert (2019)</button>
-                <button data-href="https://www.canon-europe.com/business-printers-and-faxes/oce-touchstone/">Oce Touchstone (2018)</button>
-                <button data-href="https://play.google.com/store/apps/details?id=com.ocesoftware.publishermobile">Oce Publisher Mobile (2013)</button>
-                <button data-href="https://networks.nokia.com/es/node/1156">Alcatel/Nokia 5900 SRP (2010)</button>
-            </div>
-            <div class="row" id="target3">
+            <div class="target-container" id="target3">
             </div>
         </div>
-    </div>
+    </section>
     
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <h3>Clients:</h3>
+    <section class="section" id="clients-section">
+        <div class="wrap">
+            <h2>Clients</h2>
+            <div class="row button-group" id="clients">
+                <button class="button button-primary" id="noctilucent" type="button">Teraseya</button>
+                <button class="button" id="iola" type="button">iOla messaging</button>
             </div>
-            <div class="row" id="clients">
-                <button id="noctilucent">Teraseya</button>
-                <button id="iola">iOla messaging</button>
-            </div>
-            <div class="row" id="target2">
+            <div class="target-container" id="target2">
             </div>
         </div>
-    </div>
+    </section>
     
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <h3>Contact:</h3>
-            </div>
-            <div class="row">
+    <section class="section" id="contact-section">
+        <div class="wrap">
+            <h2>Contact</h2>
+            <div class="row social-links">
                 <span class="social-icon">
-            <a href="http://stackoverflow.com/users/400026/daniel-voina">
-                <i class="fa fa-2x fa-stack-overflow ">
-                </i>
-            </a>
-            </span>
+                    <a href="https://stackoverflow.com/users/400026/daniel-voina" target="_blank" rel="noopener noreferrer" title="Stack Overflow">
+                        <i class="fa fa-2x fa-stack-overflow"></i>
+                    </a>
+                </span>
                 <span class="social-icon">
-            <a href="https://www.linkedin.com/in/danielvoina">
-                <i class="fa fa-2x fa-linkedin ">
-                </i>
-            </a>
-            </span>
+                    <a href="https://www.linkedin.com/in/danielvoina" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i class="fa fa-2x fa-linkedin"></i>
+                    </a>
+                </span>
                 <span class="social-icon">
-            <a href="https://github.com/dvoina">
-                <i class="fa fa-2x fa-github ">
-                </i>
-            </a>
-            </span>
+                    <a href="https://github.com/dvoina" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                </span>
                 <span class="social-icon">
-            <a href="https://www.bitbucket.org/dsva">
-                <i class="fa fa-2x fa-bitbucket ">
-                </i>
-            </a>
-            </span>
+                    <a href="https://www.bitbucket.org/dsva" target="_blank" rel="noopener noreferrer" title="Bitbucket">
+                        <i class="fa fa-2x fa-bitbucket"></i>
+                    </a>
+                </span>
                 <span class="social-icon">
-            <a href="mailto:dvoina@gmx.com">
-                <i class="fa fa-2x fa-envelope ">
-                </i>
-            </a>
-            </span>
+                    <a href="mailto:dvoina@gmx.com" title="Email">
+                        <i class="fa fa-2x fa-envelope"></i>
+                    </a>
+                </span>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section spacer">
-        <div class="container">
-            <div class="row">
-                <p>Last modified: 20160521 by dva</p>
-            </div>
+    <footer class="section spacer">
+        <div class="wrap footer-content">
+            <p class="footer-meta">Last modified: 20261118 by dva</p>
         </div>
-    </div>
+    </footer>
 
     <script>
         $(function() { 
-            $.ajaxSetup ({ cache: false }); 
+            $.ajaxSetup({ cache: false }); 
+            
+            // Load initial tabs
             $("#target1").load("details_software.html"); 
             $("#menu button").click(function() { 
+                $("#menu button").removeClass("button-primary");
+                $(this).addClass("button-primary");
                 $("#target1").load("details_" + this.id + ".html"); 
             });
             
             $("#target2").load("clients_noctilucent.html"); 
             $("#clients button").click(function() { 
-                console.log(this.id); 
+                $("#clients button").removeClass("button-primary");
+                $(this).addClass("button-primary");
                 $("#target2").load("clients_" + this.id + ".html"); 
             });
             
             $("#vanity button").click(function() { 
-                console.log(this.id); 
-                location.assign($(this).data("href")); 
+                const href = $(this).data("href");
+                if (href) {
+                    window.open(href, "_blank", "noopener,noreferrer");
+                }
             });
         });
     </script>
