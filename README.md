@@ -1,4 +1,4 @@
-# dvoina.github.io
+# net-pilgrim.github.io
 
 http://net-pilgrim.github.io - basic info
 
