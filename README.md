@@ -1,6 +1,6 @@
 # dvoina.github.io
 
-http://dvoina.github.io - basic info
+http://net-pilgrim.github.io - basic info
 
 The site contains images licensed under CC from
 - background5.jpg:
